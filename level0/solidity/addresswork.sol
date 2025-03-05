@@ -31,7 +31,7 @@ contract SimpleWallet {
         payable(msg.sender).transfer(amount);
     }
 
-    function deposite() public payable {
+    function deposit() public payable {
         balances[msg.sender] += msg.value;
     }
 
